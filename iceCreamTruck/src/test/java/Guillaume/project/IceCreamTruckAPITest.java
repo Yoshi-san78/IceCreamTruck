@@ -1,4 +1,4 @@
-package com.yourcompany.icecreamtruck;
+package java.Guillaume.project;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -16,7 +16,7 @@ public class IceCreamTruckAPITest {
 
     @Test
     public void testPurchaseItem_SuccessfulPurchase() {
-        FoodItem iceCream = new IceCream("Vanilla Ice Cream", 2.5, "Vanilla");
+        FoodItem iceCream = new IceCream("Vanilla Ice Cream", 250, "Vanilla");
         int quantity = 2;
 
         iceCreamTruckAPI.purchaseItem(iceCream, quantity);
@@ -29,7 +29,7 @@ public class IceCreamTruckAPITest {
 
     @Test
     public void testPurchaseItem_InsufficientQuantity() {
-        FoodItem iceCream = new IceCream("Strawberry Ice Cream", 2.5, "Strawberry");
+        FoodItem iceCream = new IceCream("Strawberry Ice Cream", 250, "Strawberry");
         int quantity = 10;
 
         iceCreamTruckAPI.purchaseItem(iceCream, quantity);
@@ -42,7 +42,7 @@ public class IceCreamTruckAPITest {
 
     @Test
     public void testGetTotalRevenue() {
-        FoodItem iceCream = new IceCream("Chocolate Ice Cream", 2.5, "Chocolate");
+        FoodItem iceCream = new IceCream("Chocolate Ice Cream", 250, "Chocolate");
         int quantity = 3;
 
         iceCreamTruckAPI.purchaseItem(iceCream, quantity);
