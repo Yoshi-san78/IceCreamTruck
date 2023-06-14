@@ -12,12 +12,12 @@ public class IceCreamTruckAPI {
 
     private void initializeInventory() {
         // Ice Creams
-        IceCream chocolateIceCream = new IceCream("Chocolate Ice Cream", 2.5, "Chocolate");
-        IceCream strawberryIceCream = new IceCream("Strawberry Ice Cream", 2.5, "Strawberry");
+        IceCream chocolateIceCream = new IceCream("Chocolate Ice Cream", 250, "Chocolate");
+        IceCream strawberryIceCream = new IceCream("Strawberry Ice Cream", 250, "Strawberry");
         // Shaved Ice
-        ShavedIce mangoShavedIce = new ShavedIce("Mango Shaved Ice", 3.0, "Mango");
+        ShavedIce mangoShavedIce = new ShavedIce("Mango Shaved Ice", 300, "Mango");
         // Snacks
-        Snack chips = new Snack("Chips", 1.0);
+        Snack chips = new Snack("Chips", 100);
 
         iceCreamTruck.addItem(chocolateIceCream, 5);
         iceCreamTruck.addItem(strawberryIceCream, 3);
