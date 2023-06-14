@@ -7,9 +7,9 @@ import java.util.Map;
         IceCreamTruckAPI iceCreamTruckAPI = new IceCreamTruckAPI();
 
         // Purchase example (IceCreamTruckAPI)
-        iceCreamTruckAPI.purchaseItem(new IceCream("Chocolate Ice Cream", 2.5, "Chocolate"), 2);
-        iceCreamTruckAPI.purchaseItem(new ShavedIce("Mango Shaved Ice", 3.0, "Mango"), 3);
-        iceCreamTruckAPI.purchaseItem(new Snack("Chips", 1.0), 5);
+        iceCreamTruckAPI.purchaseItem(new IceCream("Chocolate Ice Cream", 250, "Chocolate"), 2);
+        iceCreamTruckAPI.purchaseItem(new ShavedIce("Mango Shaved Ice", 300, "Mango"), 3);
+        iceCreamTruckAPI.purchaseItem(new Snack("Chips", 100), 5);
 
         // Get inventory example (IceCreamTruckAPI)
         Map<FoodItem, Integer> inventory = iceCreamTruckAPI.getInventory();
